@@ -8387,5 +8387,5 @@
 			"name": "MT-datamodel"
 		}
 	],
-	"documentation": "#Design project deployement in progesss ...\n"
+	"documentation": "#Design project build in progesss ...\nAvailable artfacts : \n\n* Deployment Diagram\n* Modules Package Diagram"
 }
