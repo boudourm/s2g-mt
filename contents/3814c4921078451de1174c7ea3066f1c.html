@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>S2G-MT</title>
+    <title>Portail Pro</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -18,15 +18,17 @@
 
       <!-- Name Title -->
 
-      <h1>S2G-MT</h1>
+      <h1>Portail Pro</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-Project"></span>
-          Project
+          <span class="node-icon staruml-icon icon-UMLComponent"></span>
+          UMLComponent
         </span>
+        
+          <span style="margin-left: 10px" class="alert alert-info">«Web App»</span>
         
       </section>
 
@@ -38,6 +40,18 @@
         
           
           <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>S2G-MT</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='393ccf2a0b4c969a435cefdff1a5b1b6.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>Deployment</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='253b3cf251f29fe4785354ccb811b3d3.html'><span class='node-icon staruml-icon icon-UMLNode'></span>«Server»PREPROD</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='9a06a544172622f785aff1a1bdce8c50.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«Virtual Machine»VM PREPROD PRO</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='3814c4921078451de1174c7ea3066f1c.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«Web App»Portail Pro</a></span>
         
       </section>
 
@@ -52,7 +66,7 @@
         <h3>Description</h3>
         <div>
           
-            <h1>Design project deployement in progesss ...</h1>
+            <span class="label label-info">none</span>
           
         </div>
       </section>
@@ -73,12 +87,36 @@
       <!-- Classifier -->
 
       
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
 
       <!-- Interface -->
 
       
 
       <!-- Component -->
+
+      
+        
+        
 
       
 
@@ -206,7 +244,7 @@
     
     <tr>
         <td>name</td>
-        <td>S2G-MT</td>
+        <td>Portail Pro</td>
     </tr>
     
     
@@ -220,8 +258,8 @@
     
     
     <tr>
-        <td>author</td>
-        <td></td>
+        <td>stereotype</td>
+        <td>Web App</td>
     </tr>
     
     
@@ -229,8 +267,27 @@
     
     
     <tr>
-        <td>company</td>
-        <td></td>
+        <td>visibility</td>
+        <td>public</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>isAbstract</td>
+        <td><span class='label label-info'>false</span></td>
     </tr>
     
     
@@ -238,8 +295,8 @@
     
     
     <tr>
-        <td>copyright</td>
-        <td></td>
+        <td>isFinalSpecialization</td>
+        <td><span class='label label-info'>false</span></td>
     </tr>
     
     
@@ -247,8 +304,17 @@
     
     
     <tr>
-        <td>version</td>
-        <td></td>
+        <td>isLeaf</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isIndirectlyInstantiated</td>
+        <td><span class='label label-info'>true</span></td>
     </tr>
     
     
@@ -264,11 +330,41 @@
       <!-- Constraints, Dependencies, Dependants -->
 
       
+        
+        
+
+
+        
+        
+<section class="element-list">
+    <h3>Dependencies</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='eca44a1a9793c7ba609dcd37e28ca041.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«Database»PREPROD DB</a></li>
+        
+    </ul>
+</section>
+
+
+
+        
+        
+
+      
 
       <!-- Relationships -->
 
       
       
+<section class="element-list">
+    <h3>Relationships</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='c40636a97a74a17f9d06ac36ff4c425a.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(Portail Pro→PREPROD DB)</a></li>
+        
+    </ul>
+</section>
+
 
 
       <!-- Owned Elements -->
@@ -279,35 +375,7 @@
     <h3>Owned Elements</h3>
     <ul class="nav nav-list">
         
-        <li><a href='594af663de577680f35b13183109d675.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Modules</a></li>
-        
-        <li><a href='b77cbc5e87c798e6eeb705e2ccff51b5.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>Actors</a></li>
-        
-        <li><a href='393ccf2a0b4c969a435cefdff1a5b1b6.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>Deployment</a></li>
-        
-        <li><a href='29cd466b8601ad5cb464b3e8351c5726.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>Features</a></li>
-        
-        <li><a href='890d1cc86f01652484f4653fe8f244c8.html'><span class='node-icon staruml-icon icon-UMLSubsystem'></span>MT-fabrication</a></li>
-        
-        <li><a href='1719b7bf0d2fdfa8ea65bd7525768ddb.html'><span class='node-icon staruml-icon icon-UMLSubsystem'></span>S2G-MT-ASGS-Connector</a></li>
-        
-        <li><a href='336fe5200cfc411460e614429c106412.html'><span class='node-icon staruml-icon icon-UMLSubsystem'></span>S2G-MT-Usager-Back</a></li>
-        
-        <li><a href='2b9f1630ecbbab66ba4afa9d963fdf88.html'><span class='node-icon staruml-icon icon-UMLSubsystem'></span>S2G-MT-Pro-Back</a></li>
-        
-        <li><a href='538089f9d5e3c6e63311ca63267663a8.html'><span class='node-icon staruml-icon icon-UMLSubsystem'></span>S2G-MT-Pro-Front</a></li>
-        
-        <li><a href='a603a5ce18d83343585c196284798080.html'><span class='node-icon staruml-icon icon-UMLSubsystem'></span>S2G-MT-Usager-Front</a></li>
-        
-        <li><a href='fce469f062f90d11f64d670985ff5dd6.html'><span class='node-icon staruml-icon icon-UMLSubsystem'></span>S2G-MT-Services</a></li>
-        
-        <li><a href='ee5ef2f888ed82ced7f4108b9cd37523.html'><span class='node-icon staruml-icon icon-UMLSubsystem'></span>MT-prevision</a></li>
-        
-        <li><a href='09f8b920623035c9734cdb823f9f20a7.html'><span class='node-icon staruml-icon icon-UMLSubsystem'></span>S2G-MT-Security</a></li>
-        
-        <li><a href='24c6d1d2ee266a1b144e4404e2de4e9e.html'><span class='node-icon staruml-icon icon-UMLSubsystem'></span>MT-outillage</a></li>
-        
-        <li><a href='79d95e610339747bd487799ecbe2da52.html'><span class='node-icon staruml-icon icon-UMLSubsystem'></span>MT-datamodel</a></li>
+        <li><a href='c40636a97a74a17f9d06ac36ff4c425a.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(Portail Pro→PREPROD DB)</a></li>
         
     </ul>
 </section>
