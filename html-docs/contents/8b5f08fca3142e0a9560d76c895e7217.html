@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>MeteringPointService</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/icon-font/icons.css">
+<script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+
+  </head>
+  <body>
+    <div>
+
+      <!-- Name Title -->
+
+      <h1>MeteringPointService</h1>
+
+      <!-- Type and Stereotype -->
+
+      <section style="margin-top: .5em;">
+        <span class="alert alert-info">
+          <span class="node-icon staruml-icon icon-UMLClass"></span>
+          UMLClass
+        </span>
+        
+      </section>
+
+      <!-- Path -->
+
+      <section style="margin-top: 10px">
+        
+        
+        
+          
+          <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>S2G-MT</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='fce469f062f90d11f64d670985ff5dd6.html'><span class='node-icon staruml-icon icon-UMLSubsystem'></span>S2G-MT-Services</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='b94f39fbec2b2fc58ff3985d3ab16e54.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>net</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='3a16b09d216457df8b2dfdc270112f06.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>atos</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='972cb86a08cbe45b26c8109675e14058.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>s2g</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='817926576256700ebc92d8ba715ea2b5.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>mt</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='cbe24923edd1a0fabf1f08f05ee90bf7.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>services</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='64d368cc06913bbb4f5b1cbbad4d0d43.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>producer</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='95a9964b3d87c5d5b10c1d3029692029.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>meteringPoint</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='8b5f08fca3142e0a9560d76c895e7217.html'><span class='node-icon staruml-icon icon-UMLClass'></span>MeteringPointService</a></span>
+        
+      </section>
+
+      <!-- Diagram -->
+
+      
+
+      <!-- Description -->
+
+      
+      <section>
+        <h3>Description</h3>
+        <div>
+          
+            <span class="label label-info">none</span>
+          
+        </div>
+      </section>
+      
+
+      <!-- Specification -->
+
+      
+
+      <!-- Directed Relationship -->
+
+      
+
+      <!-- Undirected Relationship -->
+
+      
+
+      <!-- Classifier -->
+
+      
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
+
+      <!-- Interface -->
+
+      
+
+      <!-- Component -->
+
+      
+
+      <!-- Node -->
+
+      
+
+      <!-- Actor -->
+
+      
+
+      <!-- Use Case -->
+
+      
+
+      <!-- Template Parameters -->
+
+      
+
+      <!-- Literals -->
+
+      
+
+      <!-- Attributes -->
+
+      
+      <section>
+        <h3>Attributes</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Visibility</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="a597be5d424b0d5b90fb6e6b5321c3c8.html">log</a></td>
+            <td><a href='29caa1ffbd93cae31ea5bb5fde5488b9.html'>Logger</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="e419fecd4d05ccf21ee76f5f1ae0e6a3.html">meteringPointRepository</a></td>
+            <td><a href='82e2d5c27799028eae6cb6335960d8da.html'>MeteringPointRepository</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="4ceeb2e309461297009bba8d2184e377.html">collUsageProductionRepository</a></td>
+            <td><a href='b1ee88e091a9b5c0c4731e1da2b7e2d0.html'>CollUsageProductionRepository</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="ec847263651ee9e7decfb0431bb895ca.html">useForCupRepository</a></td>
+            <td><a href='8a01d0c8872d441619d9ec71cb036e8f.html'>UseForCupRepository</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="823a100ae76ceb0b2008019befdd5057.html">periodForCupRepository</a></td>
+            <td><a href='cbe9ff2b23b73b15953b2fdc0b04021f.html'>PeriodForCupRepository</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="a7174ccc9f74ed6a43d26f753db596cf.html">fluidRepository</a></td>
+            <td><a href='2169f4785cb4be0d34a792dcdae97468.html'>FluidRepository</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="3ec368a4993012a148e636cb5c4b6c82.html">premiseRepository</a></td>
+            <td><a href='0a83e6b6492c6c6dd6cf8dd228d553a3.html'>PremiseRepository</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="97c0b597d9930b837209c6aa66e2cc2d.html">organisationRepository</a></td>
+            <td><a href='2a501574ed4e409fe10c6df17078a169.html'>OrganisationRepository</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="f580bc53300c780eedb6f0a8605cbdb9.html">consentRepository</a></td>
+            <td><a href='a8609a4eac07f19f6e8df77d622ba325.html'>ConsentRepository</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="79cebcfbcb5cc395d0d1cc9c95eda62b.html">siteRepository</a></td>
+            <td><a href='d833e5de47b5180751b5da79e84837b6.html'>SiteRepository</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="d2410e9b5fc2a3009c63634e092837f3.html">parameterAppRepository</a></td>
+            <td><a href='5ec758a7d4ec046eea2f8700ce553b51.html'>ParameterAppRepository</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="aa4479a0c3bd15ab8330db53a792bba7.html">requestMpRepository</a></td>
+            <td><a href='97eedaad0de5481aaca07d2115b22165.html'>RequestMpRepository</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="871bfca819f46ad8cd484ce3dee20402.html">messageProRepository</a></td>
+            <td><a href='d18484029f0953b6675c938f2485a431.html'>MessageProRepository</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="3276d47dbf85df1ecb365a4e880ee682.html">emailParamsService</a></td>
+            <td><a href='38e4b67274ead4b7e0df981bb0d46b74.html'>EmailParamsService</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="47c96b22dc00db066a61debab53cf68c.html">dpsHandlerFactory</a></td>
+            <td><a href='4fc4af317180d2ca13983bea8e5030b7.html'>DpsHandlerFactory</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>package</td>
+            <td><a href="76f8d94a8a1d3b495ca9352d4516bba6.html">requestMpControlService</a></td>
+            <td><a href='aeeb7ff0ccda961350d9b596e730e6e7.html'>RequestMpControlService</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>package</td>
+            <td><a href="86983d5d8db31aeee5fa1d89a9b27967.html">requestMpService</a></td>
+            <td><a href='a7177afee2c295e954f455a0e5eb6efd.html'>RequestMpService</a></td>
+            <td></td>
+          </tr>
+          
+        </table>
+      </section>
+      
+
+      <!-- Operations -->
+
+      
+      <section>
+        <h3>Operations</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Visibility</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="73f843d8695b630e5e2fc095e11f31be.html">MeteringPointService()</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="c2ae505f974b71bf3afd63e6a2e56fc2.html">findOrphans(idOrg: Long, common: Boolean, isSiteManager: Boolean): ResponseJSON</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="65f8ac9ef9875cd578b0e8dae8ea2c12.html">findByPRM(prmRegEx: String, idOrg: Long, isSiteManager: Boolean): ResponseJSON</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="69ef5578280e2d4b572e7e8b7549d13b.html">findAllMeteringPoint(idOrg: Long, isSiteManager: Boolean, pdc: String, fluid: String, city: String, wayName: String, wayRange: String): ResponseJSON</a></td>
+            <td><p>Recherche de tous les compteurs en fonction de leur nom/ville/...</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="d0dc068d6d5828014ed47d4a8514efef.html">findAllMeteringPoint(idOrg: Long, isSiteManager: Boolean, fluid: String, city: String, wayName: String, wayRange: String): ResponseJSON</a></td>
+            <td><p>Récupération des compteurs suivant le fluid et la ville
+les compteurs peuvent avoir ou pas des contrats</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="2b4e7f3360011591e3814b53d82deb8d.html">getContrats(idFluid: String): ResponseJSON</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="fa794261c9db99da68769eba762de73a.html">findBySiteId(siteId: Long, idOrg: Long, isSiteManager: Boolean): ResponseJSON</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="80728319674f8669332566618b2fe433.html">findByPremiseId(premiseId: Long, idOrg: Long, isSiteManager: Boolean): ResponseJSON</a></td>
+            <td><p>Récupération des points de comptage en fonction du local</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="f924f021df42c176b366ba33302c4749.html">findByIdMPoint(idMPoint: Long, idOrg: Long, isSiteManager: Boolean): ResponseJSON</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="12e59c62e94d2c7a0df3562eafc30e51.html">insert(mtMessage: Message, idOrg: Long, isSiteManager: Boolean): ResponseJSON</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="aff3b541054af68a3aa54aabe76f1450.html">changeContract(idMpoitnList: Integer, contractId: Integer, date: Date, idOrg: Long, isSiteManager: Boolean): ResponseJSON</a></td>
+            <td><p>Permet d&#39;appliquer un nouveau contrat sur une liste de point de comptage</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="5d99f9214bab6f78f6819976415d380f.html">update(mtMessage: Message, mpId: Long, idOrg: Long, isSiteManager: Boolean): void</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="dc32dc69ff3fded24d3ff4e8263385a0.html">delete(mpExternalId: String, idOrg: Long, isSiteManager: Boolean): void</a></td>
+            <td><p>if (fluid != null) {
+			meteringPoint.setFluid(fluid);
+		}
+delete premise and trace it</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="a38ada071fc77acbc800c6d3b9a8b8ee.html">dissociateToPremise(mpExternalId: String, idOrg: Long, isSiteManager: Boolean): void</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="3aa938ea00b6719a75264a93633928d4.html">dissociateCupFromMeteringPoint(idMpoint: Long, idCup: Long, idOrg: Long, isSiteManager: Boolean): void</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="391776f94e18594b80253af7b082cb97.html">findAll(idOrg: Long, isSiteManager: Boolean): ResponseJSON</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="fabf7cb7ccd9724eed60a43289fb5ec5.html">associateToPremise(idPremise: Long, mpExternalId: String, idOrg: Long, isSiteManager: Boolean): void</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="e01b67d84c365516c98ca3809f0cdf97.html">associateManyCups(idMpoint: Long, message: Message, idOrg: Long, isSiteManager: Boolean): void</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="a01523051aa7f97ec347b4f9eef14516.html">removeVentilationPeriod(idMpoint: Long, idPfc: Long, idOrg: Long, isSiteManager: Boolean): void</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="052499f19e01aa855734b0778878363a.html">addVentilationPeriod(idMpoint: Long, message: Message, idOrg: Long, isSiteManager: Boolean): void</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="25246a9ff9d58490b4abe13c2a27cf83.html">updateVentilationPeriod(idPfc: Long, message: Message, idOrg: Long, isSiteManager: Boolean): void</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="ff6c459152a4f926214aa01f062762b7.html">insertExternalMeteringPoint(mtMessage: Message, occupy: Occupy): ResponseJSON</a></td>
+            <td><p>Création d&#39;une fiche request pour un point de comptage autodéclaré avec le consentement actif associé
+Méthode pour compteur GEG ou ADICT (GRDF)</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="5046b281195bf0a1ab142ff31670c917.html">changeMpSubscriptionStatus(mp: MeteringPoint, status: MeteringPointSubscriptionStatus): void</a></td>
+            <td></td>
+          </tr>
+          
+        </table>
+      </section>
+      
+
+      <!-- Receptions -->
+
+      
+
+      <!-- Extension Points -->
+
+      
+
+      <!-- Parameters -->
+
+      
+
+      <!-- Diagrams -->
+
+      
+      
+
+      <!-- Behavior -->
+
+      
+
+      <!-- Action -->
+
+      
+
+      <!-- Interaction -->
+
+      
+
+      <!-- CombinedFragment -->
+
+      
+
+      <!-- Activity -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State -->
+
+      
+
+      <!-- Vertex -->
+
+      
+
+      <!-- Transition -->
+
+      
+
+      <!-- Data Model (ERD) -->
+
+      
+
+      <!-- Columns (ERD) -->
+
+      
+
+      <!-- Related Entities (ERD) -->
+
+      
+
+      <!-- Data Flows (DFD) -->
+
+      
+
+      <!-- Flows (Flowchart) -->
+
+      
+
+      <!-- Properties -->
+
+      <section>
+        <h3>Properties</h3>
+        
+        <table class="table table-striped table-bordered">
+    <tr>
+        <th width="50%">Name</th>
+        <th width="50%">Value</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>name</td>
+        <td>MeteringPointService</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>stereotype</td>
+        <td><span class='label label-info'>null</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>visibility</td>
+        <td>public</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>isAbstract</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isFinalSpecialization</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isLeaf</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isActive</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+</table>                
+
+      </section>
+
+      <!-- Tags -->
+
+      
+
+      <!-- Constraints, Dependencies, Dependants -->
+
+      
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
+
+      <!-- Relationships -->
+
+      
+      
+<section class="element-list">
+    <h3>Relationships</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='dbc578df2d789346f4b04f78d2647a30.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(MeteringPointService—EmailDemandService)</a></li>
+        
+        <li><a href='12a5b5d558453450b5b19216bcb6a9b7.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(MeteringPointService—ConsentService)</a></li>
+        
+    </ul>
+</section>
+
+
+
+      <!-- Owned Elements -->
+
+      
+      
+<section class="element-list">
+    <h3>Owned Elements</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='dbc578df2d789346f4b04f78d2647a30.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(MeteringPointService—EmailDemandService)</a></li>
+        
+        <li><a href='12a5b5d558453450b5b19216bcb6a9b7.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(MeteringPointService—ConsentService)</a></li>
+        
+    </ul>
+</section>
+
+
+
+    </div>
+  </body>
+</html>
