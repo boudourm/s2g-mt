@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>WeatherResJSON</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/icon-font/icons.css">
+<script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+
+  </head>
+  <body>
+    <div>
+
+      <!-- Name Title -->
+
+      <h1>WeatherResJSON</h1>
+
+      <!-- Type and Stereotype -->
+
+      <section style="margin-top: .5em;">
+        <span class="alert alert-info">
+          <span class="node-icon staruml-icon icon-UMLClass"></span>
+          UMLClass
+        </span>
+        
+      </section>
+
+      <!-- Path -->
+
+      <section style="margin-top: 10px">
+        
+        
+        
+          
+          <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>S2G-MT</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='79d95e610339747bd487799ecbe2da52.html'><span class='node-icon staruml-icon icon-UMLSubsystem'></span>MT-datamodel</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='dfeaaa5a292416e9b29d584edd2aa1ca.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>net</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='506dce985e64eea64ed565dcd2df6d58.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>atos</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='3a750d36524170e453f0eec7f6d3a19c.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>ecocite</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='65bfee0fdde208afdec425fcfad0554e.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>datamodel</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='4fb11604361ad3d8ed56ea136ad31e2d.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>jsonModel</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='863cce2a2042bdda07ebd4c6fe29e0fc.html'><span class='node-icon staruml-icon icon-UMLClass'></span>WeatherForecastOpenweathermapJSON</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='b2f3f86ba4487a0b59caa733bfffa95c.html'><span class='node-icon staruml-icon icon-UMLClass'></span>WeatherResJSON</a></span>
+        
+      </section>
+
+      <!-- Diagram -->
+
+      
+
+      <!-- Description -->
+
+      
+      <section>
+        <h3>Description</h3>
+        <div>
+          
+            <p>{
+    &quot;city&quot;: {
+        &quot;id&quot;: 3014728,
+        &quot;name&quot;: &quot;Grenoble&quot;,
+        &quot;coord&quot;: {
+            &quot;lon&quot;: 5.71667,
+            &quot;lat&quot;: 45.166672
+        },
+        &quot;country&quot;: &quot;FR&quot;,
+        &quot;population&quot;: 0,
+        &quot;sys&quot;: {
+            &quot;population&quot;: 0
+        }
+    },
+    &quot;cod&quot;: &quot;200&quot;,
+    &quot;message&quot;: 0.0079,
+    &quot;cnt&quot;: 37,
+    &quot;list&quot;: [
+        {
+            &quot;dt&quot;: 1448020800,
+            &quot;main&quot;: {
+                &quot;temp&quot;: 283.57,
+                &quot;temp<em>min&quot;: 283.568,
+                &quot;temp</em>max&quot;: 283.57,
+                &quot;pressure&quot;: 944.46,
+                &quot;sea<em>level&quot;: 1032.49,
+                &quot;grnd</em>level&quot;: 944.46,
+                &quot;humidity&quot;: 98,
+                &quot;temp<em>kf&quot;: 0
+            },
+            &quot;weather&quot;: [
+                {
+                    &quot;id&quot;: 501,
+                    &quot;main&quot;: &quot;Rain&quot;,
+                    &quot;description&quot;: &quot;moderate rain&quot;,
+                    &quot;icon&quot;: &quot;10d&quot;
+                }
+            ],
+            &quot;clouds&quot;: {
+                &quot;all&quot;: 92
+            },
+            &quot;wind&quot;: {
+                &quot;speed&quot;: 0.93,
+                &quot;deg&quot;: 214.003
+            },
+            &quot;rain&quot;: {
+                &quot;3h&quot;: 4.51
+            },
+            &quot;sys&quot;: {
+                &quot;pod&quot;: &quot;d&quot;
+            },
+            &quot;dt</em>txt&quot;: &quot;2015-11-20 12:00:00&quot;
+        },</p>
+          
+        </div>
+      </section>
+      
+
+      <!-- Specification -->
+
+      
+
+      <!-- Directed Relationship -->
+
+      
+
+      <!-- Undirected Relationship -->
+
+      
+
+      <!-- Classifier -->
+
+      
+        
+        
+<section class="element-list">
+    <h3>Generalized Elements</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='7ddf74f5b4662876c46f85abe53f3da6.html'><span class='node-icon staruml-icon icon-UMLClass'></span>ObjectJSON</a></li>
+        
+    </ul>
+</section>
+
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
+
+      <!-- Interface -->
+
+      
+
+      <!-- Component -->
+
+      
+
+      <!-- Node -->
+
+      
+
+      <!-- Actor -->
+
+      
+
+      <!-- Use Case -->
+
+      
+
+      <!-- Template Parameters -->
+
+      
+
+      <!-- Literals -->
+
+      
+
+      <!-- Attributes -->
+
+      
+      <section>
+        <h3>Attributes</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Visibility</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="0eade63c4c85ad4d7a12af46ef56b2bf.html">dt</a></td>
+            <td>Long</td>
+            <td></td>
+          </tr>
+          
+        </table>
+      </section>
+      
+
+      <!-- Operations -->
+
+      
+      <section>
+        <h3>Operations</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Visibility</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="d305bb23d2a45ab6bae3e737046b3867.html">WeatherResJSON()</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="40515e70c55540f192e580bebfe4b930.html">getDt(): Long</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="bd70cce5818c1184bed2aacbcf7c447f.html">setDt(dt: Long): void</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="d19c59991dcfe8ce4ccf0dde35820666.html">getMain(): MainJSON</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="892f38ce2efdbed26ffd8af24f4364d7.html">setMain(main: MainJSON): void</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="9f7d581027e415048dabf97cbd2e6656.html">getWeather(): null</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="e589229ab7be5b192d23347b03cc3091.html">setWeather(weather): void</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="af09c4bcc3a1f04861df5cf04db09bd6.html">getClouds(): CloudsJSON</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="3c88686f37dbd46fe433630918cd1198.html">setClouds(clouds: CloudsJSON): void</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="b858319512f92526b2f59a496767e815.html">getWind(): WindJSON</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="57477faf8b38ac52a01e46d6ceee25c5.html">setWind(wind: WindJSON): void</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="2ee1a9643d76f0b22376d95a0fdd80ae.html">toJson(): String</a></td>
+            <td></td>
+          </tr>
+          
+        </table>
+      </section>
+      
+
+      <!-- Receptions -->
+
+      
+
+      <!-- Extension Points -->
+
+      
+
+      <!-- Parameters -->
+
+      
+
+      <!-- Diagrams -->
+
+      
+      
+
+      <!-- Behavior -->
+
+      
+
+      <!-- Action -->
+
+      
+
+      <!-- Interaction -->
+
+      
+
+      <!-- CombinedFragment -->
+
+      
+
+      <!-- Activity -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State -->
+
+      
+
+      <!-- Vertex -->
+
+      
+
+      <!-- Transition -->
+
+      
+
+      <!-- Data Model (ERD) -->
+
+      
+
+      <!-- Columns (ERD) -->
+
+      
+
+      <!-- Related Entities (ERD) -->
+
+      
+
+      <!-- Data Flows (DFD) -->
+
+      
+
+      <!-- Flows (Flowchart) -->
+
+      
+
+      <!-- Properties -->
+
+      <section>
+        <h3>Properties</h3>
+        
+        <table class="table table-striped table-bordered">
+    <tr>
+        <th width="50%">Name</th>
+        <th width="50%">Value</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>name</td>
+        <td>WeatherResJSON</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>stereotype</td>
+        <td><span class='label label-info'>null</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>visibility</td>
+        <td>private</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>isAbstract</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isFinalSpecialization</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isLeaf</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isActive</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+</table>                
+
+      </section>
+
+      <!-- Tags -->
+
+      
+
+      <!-- Constraints, Dependencies, Dependants -->
+
+      
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
+
+      <!-- Relationships -->
+
+      
+      
+<section class="element-list">
+    <h3>Relationships</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='80e0cf76e89bcc8c7eedcea1245e0897.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(WeatherResJSON→ObjectJSON)</a></li>
+        
+        <li><a href='dd50acc5148b52d721842c18cc154b52.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(WeatherResJSON—MainJSON)</a></li>
+        
+        <li><a href='331bd1b88d83ba6307b4acc933c4d345.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(WeatherResJSON—ResultJSON)</a></li>
+        
+        <li><a href='f1ac0db75756155288c70757a29cc627.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(WeatherResJSON—CloudsJSON)</a></li>
+        
+        <li><a href='c45ec9e3bd6888c4dc30c12a0f5aeded.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(WeatherResJSON—WindJSON)</a></li>
+        
+        <li><a href='7c64e99175fbab446ff088d3ed02cb87.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(WeatherForecastOpenweathermapJSON—WeatherResJSON)</a></li>
+        
+    </ul>
+</section>
+
+
+
+      <!-- Owned Elements -->
+
+      
+      
+<section class="element-list">
+    <h3>Owned Elements</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='80e0cf76e89bcc8c7eedcea1245e0897.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(WeatherResJSON→ObjectJSON)</a></li>
+        
+        <li><a href='dd50acc5148b52d721842c18cc154b52.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(WeatherResJSON—MainJSON)</a></li>
+        
+        <li><a href='331bd1b88d83ba6307b4acc933c4d345.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(WeatherResJSON—ResultJSON)</a></li>
+        
+        <li><a href='f1ac0db75756155288c70757a29cc627.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(WeatherResJSON—CloudsJSON)</a></li>
+        
+        <li><a href='c45ec9e3bd6888c4dc30c12a0f5aeded.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(WeatherResJSON—WindJSON)</a></li>
+        
+    </ul>
+</section>
+
+
+
+    </div>
+  </body>
+</html>

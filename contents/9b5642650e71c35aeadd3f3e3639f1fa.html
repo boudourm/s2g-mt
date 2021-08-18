@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>StartupSingleton</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/icon-font/icons.css">
+<script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+
+  </head>
+  <body>
+    <div>
+
+      <!-- Name Title -->
+
+      <h1>StartupSingleton</h1>
+
+      <!-- Type and Stereotype -->
+
+      <section style="margin-top: .5em;">
+        <span class="alert alert-info">
+          <span class="node-icon staruml-icon icon-UMLClass"></span>
+          UMLClass
+        </span>
+        
+      </section>
+
+      <!-- Path -->
+
+      <section style="margin-top: 10px">
+        
+        
+        
+          
+          <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>S2G-MT</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='2b9f1630ecbbab66ba4afa9d963fdf88.html'><span class='node-icon staruml-icon icon-UMLSubsystem'></span>S2G-MT-Pro-Back</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='6b6956c13ee6337ac819568968cc2837.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>net</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='7eb1e254a278ba6b5e1c053c26864777.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>atos</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='9dbdea0d16563f762507156d459382b6.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>s2g</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='43b44d731649c6fbb1a1931867763105.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>mt</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='80037f8cfbb61b137ba3ece9ed2ccb31.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>pro</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='cb712dd7f9b6194d7223a8d2495f82db.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>cron</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='9b5642650e71c35aeadd3f3e3639f1fa.html'><span class='node-icon staruml-icon icon-UMLClass'></span>StartupSingleton</a></span>
+        
+      </section>
+
+      <!-- Diagram -->
+
+      
+
+      <!-- Description -->
+
+      
+      <section>
+        <h3>Description</h3>
+        <div>
+          
+            <p>log.info(&quot;On envoie des mails aux &quot;+metersList.size()+&quot; compteurs&quot;);
+		String from = parameterAppRepository.findByparamId(&quot;S2G<em>MAIL</em>ADDRESS&quot;).getParamValue();
+		String name = parameterAppRepository.findByparamId(&quot;S2G<em>MAIL</em>NAME&quot;).getParamValue();
+		String host = parameterAppRepository.findByparamId(&quot;S2G<em>MAIL</em>SMTP&quot;).getParamValue();
+		for(MeteringPoint mr : metersList){
+			Communication.sendMail(
+				from,
+				mr.getMail(),
+				&quot;Métro Énergies : rappel pour relever votre compteur ‘‘&quot;+mr.getMpName()+&quot;’’ (&quot;+mr.getMpFluid()+&quot;)&quot;, 
+				&quot;Bonjour,\n\n&quot;+
+				&quot;Pour rappel, la dernière valeur saisie pour votre compteur ‘‘&quot;+mr.getMpName()+&quot;’’ (&quot;+mr.getMpFluid()+&quot;) date de plus de &quot;+mr.getDelay()+&quot; jours.\n&quot;+
+				&quot;Ce message vous est envoyé selon les paramètres de rappel que vous avez défini pour ce compteur.\n\n&quot;+
+				&quot;Cordialement,\n&quot;+
+				&quot;L&#39;équipe Métro Énergies\n\n&quot;+
+				&quot;Ce message vous a été envoyé automatiquement. Nous vous remercions de ne pas y répondre.&quot;,
+				name,
+				host,
+				false
+			);
+		}</p>
+          
+        </div>
+      </section>
+      
+
+      <!-- Specification -->
+
+      
+
+      <!-- Directed Relationship -->
+
+      
+
+      <!-- Undirected Relationship -->
+
+      
+
+      <!-- Classifier -->
+
+      
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
+
+      <!-- Interface -->
+
+      
+
+      <!-- Component -->
+
+      
+
+      <!-- Node -->
+
+      
+
+      <!-- Actor -->
+
+      
+
+      <!-- Use Case -->
+
+      
+
+      <!-- Template Parameters -->
+
+      
+
+      <!-- Literals -->
+
+      
+
+      <!-- Attributes -->
+
+      
+      <section>
+        <h3>Attributes</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Visibility</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="0d2cd67792a4e13c62d9e053ddfc658d.html">log</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>package</td>
+            <td><a href="c87e27cf882f09b7e6e91837e810354f.html">cronManager</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="eab8e0281886e363a71d987f5fc5acd2.html">idCronsList</a></td>
+            <td>String</td>
+            <td></td>
+          </tr>
+          
+        </table>
+      </section>
+      
+
+      <!-- Operations -->
+
+      
+      <section>
+        <h3>Operations</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Visibility</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="e945e9fcae6daf81b2c2710262735aca.html">startup(): void</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="5477cbccd15ada2f2b8e47c1fa90986a.html">stopJobs(): void</a></td>
+            <td></td>
+          </tr>
+          
+        </table>
+      </section>
+      
+
+      <!-- Receptions -->
+
+      
+
+      <!-- Extension Points -->
+
+      
+
+      <!-- Parameters -->
+
+      
+
+      <!-- Diagrams -->
+
+      
+      
+
+      <!-- Behavior -->
+
+      
+
+      <!-- Action -->
+
+      
+
+      <!-- Interaction -->
+
+      
+
+      <!-- CombinedFragment -->
+
+      
+
+      <!-- Activity -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State -->
+
+      
+
+      <!-- Vertex -->
+
+      
+
+      <!-- Transition -->
+
+      
+
+      <!-- Data Model (ERD) -->
+
+      
+
+      <!-- Columns (ERD) -->
+
+      
+
+      <!-- Related Entities (ERD) -->
+
+      
+
+      <!-- Data Flows (DFD) -->
+
+      
+
+      <!-- Flows (Flowchart) -->
+
+      
+
+      <!-- Properties -->
+
+      <section>
+        <h3>Properties</h3>
+        
+        <table class="table table-striped table-bordered">
+    <tr>
+        <th width="50%">Name</th>
+        <th width="50%">Value</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>name</td>
+        <td>StartupSingleton</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>stereotype</td>
+        <td><span class='label label-info'>null</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>visibility</td>
+        <td>public</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>isAbstract</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isFinalSpecialization</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isLeaf</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isActive</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+</table>                
+
+      </section>
+
+      <!-- Tags -->
+
+      
+
+      <!-- Constraints, Dependencies, Dependants -->
+
+      
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
+
+      <!-- Relationships -->
+
+      
+      
+
+
+      <!-- Owned Elements -->
+
+      
+      
+
+
+    </div>
+  </body>
+</html>
