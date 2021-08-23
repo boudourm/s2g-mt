@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SecurityInterceptor</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/icon-font/icons.css">
+<script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+
+  </head>
+  <body>
+    <div>
+
+      <!-- Name Title -->
+
+      <h1>SecurityInterceptor</h1>
+
+      <!-- Type and Stereotype -->
+
+      <section style="margin-top: .5em;">
+        <span class="alert alert-info">
+          <span class="node-icon staruml-icon icon-UMLClass"></span>
+          UMLClass
+        </span>
+        
+      </section>
+
+      <!-- Path -->
+
+      <section style="margin-top: 10px">
+        
+        
+        
+          
+          <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>S2G-MT</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='2b9f1630ecbbab66ba4afa9d963fdf88.html'><span class='node-icon staruml-icon icon-UMLSubsystem'></span>S2G-MT-Pro-Back</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='6b6956c13ee6337ac819568968cc2837.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>net</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='7eb1e254a278ba6b5e1c053c26864777.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>atos</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='9dbdea0d16563f762507156d459382b6.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>s2g</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='43b44d731649c6fbb1a1931867763105.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>mt</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='80037f8cfbb61b137ba3ece9ed2ccb31.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>pro</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='5ce9a8acee8f4a4c136b5f4506f5fb50.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>security</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='1a280a9a08c348232bfb9e015b0b1887.html'><span class='node-icon staruml-icon icon-UMLClass'></span>SecurityInterceptor</a></span>
+        
+      </section>
+
+      <!-- Diagram -->
+
+      
+
+      <!-- Description -->
+
+      
+      <section>
+        <h3>Description</h3>
+        <div>
+          
+            <p>@author A176160
+Cet intercepteur verifie que les droit d&#39;appel du service REST
+si le service reste dispo de l&#39;annotation:
+-PermitAll : on ne verifie pas le token
+-DenyAll: on refuse l&#39;acces au service avec une erreur 403
+-RolesAllowed : on verifie que l&#39;utilisateur dispose bien du role dans son token, sinon on leve une erreur 401</p>
+          
+        </div>
+      </section>
+      
+
+      <!-- Specification -->
+
+      
+
+      <!-- Directed Relationship -->
+
+      
+
+      <!-- Undirected Relationship -->
+
+      
+
+      <!-- Classifier -->
+
+      
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
+
+      <!-- Interface -->
+
+      
+
+      <!-- Component -->
+
+      
+
+      <!-- Node -->
+
+      
+
+      <!-- Actor -->
+
+      
+
+      <!-- Use Case -->
+
+      
+
+      <!-- Template Parameters -->
+
+      
+
+      <!-- Literals -->
+
+      
+
+      <!-- Attributes -->
+
+      
+      <section>
+        <h3>Attributes</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Visibility</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="540e40e66b2d5df0f093c4ff4922c86c.html">AUTHORIZATION_PROPERTY</a></td>
+            <td>String</td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="03e5c63ead389465f38f5bb7d4bc0564.html">ACCESS_DENIED</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="b3ec0a9edf50934c3352ab27673ad795.html">ACCESS_FORBIDDEN</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="c8e81f1522241e537fd1a5cfb8e3cd30.html">TOKEN_INVALIDE</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="ded88ff16ece7517916847c8d1a20d94.html">TOKEN_EXPIRED</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="86322715293263da4f177a1a8cee8db2.html">log</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td></td>
+          </tr>
+          
+        </table>
+      </section>
+      
+
+      <!-- Operations -->
+
+      
+      <section>
+        <h3>Operations</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Visibility</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="06e8203f5849f6a6d5a68201f1ff4295.html">filter(requestContext): void</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="9298a40a6807f11f296e9d761c7b235e.html">getAnnotationFromMethode(method): String</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="9158dc45d38e47d1010bc07033f71c15.html">isValideToken(token: String): boolean</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="cd5d6ec2dd2399c9ce9193342c124e30.html">isExipredToken(token: String): boolean</a></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="7d127279aec35c4e3a967b4cfe99399d.html">isUserAllowed(token: String, rolesSet: String, action: String): boolean</a></td>
+            <td><p>Check if user avec enought roles access
+@param token JWT
+@param rolesSet
+@param action
+@return</p></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="babac1b43aea3d83c7d64a7df47a60e9.html">isRolesMatch(serviceToken: String, serviceToAccess: String, serviceRightToAccess: String): boolean</a></td>
+            <td><p>@param serviceToken  service, (CRUD)
+@param serviceToAccess  service
+@param serviceRightToAccess  C|R|U|D
+@return</p></td>
+          </tr>
+          
+        </table>
+      </section>
+      
+
+      <!-- Receptions -->
+
+      
+
+      <!-- Extension Points -->
+
+      
+
+      <!-- Parameters -->
+
+      
+
+      <!-- Diagrams -->
+
+      
+      
+
+      <!-- Behavior -->
+
+      
+
+      <!-- Action -->
+
+      
+
+      <!-- Interaction -->
+
+      
+
+      <!-- CombinedFragment -->
+
+      
+
+      <!-- Activity -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State -->
+
+      
+
+      <!-- Vertex -->
+
+      
+
+      <!-- Transition -->
+
+      
+
+      <!-- Data Model (ERD) -->
+
+      
+
+      <!-- Columns (ERD) -->
+
+      
+
+      <!-- Related Entities (ERD) -->
+
+      
+
+      <!-- Data Flows (DFD) -->
+
+      
+
+      <!-- Flows (Flowchart) -->
+
+      
+
+      <!-- Properties -->
+
+      <section>
+        <h3>Properties</h3>
+        
+        <table class="table table-striped table-bordered">
+    <tr>
+        <th width="50%">Name</th>
+        <th width="50%">Value</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>name</td>
+        <td>SecurityInterceptor</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>stereotype</td>
+        <td><span class='label label-info'>null</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>visibility</td>
+        <td>public</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>isAbstract</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isFinalSpecialization</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isLeaf</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isActive</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+</table>                
+
+      </section>
+
+      <!-- Tags -->
+
+      
+
+      <!-- Constraints, Dependencies, Dependants -->
+
+      
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
+
+      <!-- Relationships -->
+
+      
+      
+<section class="element-list">
+    <h3>Relationships</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='6dbc782dfa3f2b0a16a13ce2aa33c664.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(SecurityInterceptor—SingletonSecurityPro)</a></li>
+        
+    </ul>
+</section>
+
+
+
+      <!-- Owned Elements -->
+
+      
+      
+<section class="element-list">
+    <h3>Owned Elements</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='6dbc782dfa3f2b0a16a13ce2aa33c664.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(SecurityInterceptor—SingletonSecurityPro)</a></li>
+        
+    </ul>
+</section>
+
+
+
+    </div>
+  </body>
+</html>
